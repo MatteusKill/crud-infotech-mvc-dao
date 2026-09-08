@@ -1,0 +1,9 @@
+Options -Indexes
+RewriteEngine On
+
+# Permite acesso direto a arquivos e pastas existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona tudo para index.php (Front Controller)
+RewriteRule ^(.*)$ index.php [QSA,L]
