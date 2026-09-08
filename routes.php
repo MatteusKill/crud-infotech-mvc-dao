@@ -1,11 +1,11 @@
 <?php
 
 use Controller\{
-                        VendedorController,
-                        ClienteController,
-                        ProdutoController,
-                        LoginController,
-                    InicioController  };
+            VendedorController,
+            ClienteController,
+            ProdutoController,
+            LoginController,
+        InicioController};
 
 
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);

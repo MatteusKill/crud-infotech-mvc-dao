@@ -35,5 +35,6 @@
 <script src="/View/Includes/js/cadastro_cliente.js" defer></script>
 
 <?php
+   include VIEW . "/Includes/modal/modal_cliente.php";
    include VIEW . "/Includes/footer.php";
 ?>

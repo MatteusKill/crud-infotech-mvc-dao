@@ -1,0 +1,42 @@
+.modal-cliente {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: min(90vw, 420px);
+}
+
+.modal-cliente::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-cliente-close-area {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.modal-cliente-fechar {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-cliente-acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.oculta{
+  display: none;
+}
+
+.mostra{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

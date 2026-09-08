@@ -26,7 +26,12 @@
                         <td> '.$cliente->telefone.'  </td>
                         <td>  '.$cliente->email.'  </td>
                         <td>  '.$cliente->status_cliente.'  </td>
-                        <td>  Editar  </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-outline-primary" onclick="abrirModalCliente('
+                                .$cliente->id_cliente.', \''.$cliente->nome.'\', \''.$cliente->telefone.'\', \''.$cliente->email.'\', \''.$cliente->status_cliente.'\')">
+                                Editar
+                            </button>
+                        </td>
                     </tr>';
         endforeach;
    ?>
@@ -34,5 +39,6 @@
 </table>
 
 <?php
+   include VIEW . "/Includes/modal/modal_cliente.php";
    include VIEW . "/Includes/footer.php";
 ?>
